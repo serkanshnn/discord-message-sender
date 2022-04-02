@@ -23,6 +23,7 @@ client.on('ready', () => {
             console.log(`[${date}] Message received!`);
             client.channels.fetch(process.env.CHANNEL_ID).then((channel) => {
                 channel.send(message.content);
+                channel.send('______________________________________________________');
             });
         }
     });
