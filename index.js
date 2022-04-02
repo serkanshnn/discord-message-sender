@@ -1,6 +1,6 @@
 require('dotenv').config();
 const discord = require('discord.js');
-const client = new discord.Client({ intents: [
+const client = new discord.Client({ partials: ["CHANNEL"], intents: [
         discord.Intents.FLAGS.GUILDS,
         discord.Intents.FLAGS.GUILD_MESSAGES,
         discord.Intents.FLAGS.DIRECT_MESSAGES,
